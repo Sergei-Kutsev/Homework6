@@ -10,7 +10,23 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            //
+            /*2.    Ввести с клавиатуры предложение. Предложение представляет собой слова, разделенные пробелом.
+            Знаки препинания не используются. Составить программу, определяющую является ли строка палиндромом без учёта пробелов и регистра.*/
+
+            string sentence = Console.ReadLine();
+
+            sentence = sentence.Replace(" ", "").ToLower();
+            
+            string reverse = new string(sentence.ToCharArray().Reverse().ToArray());
+
+            if (sentence == reverse)
+                Console.WriteLine("Полидром");
+            if (sentence != reverse)
+                Console.WriteLine("Не полидром");
+            Console.ReadKey();
+
+
+
 
 
         }
