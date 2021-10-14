@@ -20,9 +20,13 @@ namespace Task2
             string reverse = new string(sentence.ToCharArray().Reverse().ToArray());
 
             if (sentence == reverse)
+            {
                 Console.WriteLine("Полидром");
-            if (sentence != reverse)
+            }
+            else
+            {
                 Console.WriteLine("Не полидром");
+            }
             Console.ReadKey();
 
 
